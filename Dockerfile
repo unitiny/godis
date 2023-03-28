@@ -13,10 +13,10 @@ WORKDIR /home/godis
 COPY . .
 
 # 将我们的代码编译成二进制可执行文件  可执行文件名为
-RUN go build -o app .
+# RUN go build -o app .
 
 # 声明服务端口
 EXPOSE 6379
 
 # 启动容器时运行的命令
-CMD ["/home/godis/app"]
+# CMD ["/home/godis/app"]
